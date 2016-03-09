@@ -1,4 +1,4 @@
-export default (ngModule) => {
+export const registerHelloKarmaTest = (ngModule) => {
   describe('Bundle hello related tests', () => {
     beforeEach(window.module(ngModule.name));
 

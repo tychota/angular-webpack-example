@@ -6,7 +6,7 @@ export const registerDirectives = (ngModule) => {
 
 /* ************************************************ */
 
-import registerHelloKarmaTest from '../bundle/hello/hello.spec.js';
+import { registerHelloKarmaTest } from '../bundle/hello/hello.spec.js';
 
 export const registerTests = (ngModule) => {
   registerHelloKarmaTest(ngModule);
