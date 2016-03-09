@@ -1,5 +1,9 @@
+import kcdHelloKarmaTest from './kcd-hello.test.js';
+
 import kcdHelloTemplate from './kcd-hello.html';
 import './kcd-hello.css';
+
+
 
 class kcdHelloController {
   constructor($interval) {
@@ -31,5 +35,8 @@ class kcdHelloDirective {
 kcdHelloDirective.directiveFactory.$inject = ['$q'];
 
 export const registerKcdHello = (ngModule) =>  {
+  if (isTest) {
+    kcdHelloKarmaTest(ngModule);
+  }
   ngModule.directive('kcdHello', kcdHelloDirective.directiveFactory)
 }

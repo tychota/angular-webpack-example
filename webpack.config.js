@@ -1,3 +1,7 @@
+"use strict";
+
+const webpack = require('webpack');
+
 module.exports = {
   context: __dirname + '/app',
   entry: './index.js',
@@ -21,5 +25,10 @@ module.exports = {
         loader: "style!css"
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      isTest: process.env.NODE_ENV === 'test'
+    })
+  ]
 }
