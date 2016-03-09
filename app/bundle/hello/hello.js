@@ -1,3 +1,2 @@
-export { HelloTemplate } from 'hello.template';
-export { HelloController } from 'hello.controller';
-export { HelloDirective } from 'hello.directive';
+export { HelloController } from './hello.controller';
+export { registerHello, HelloDirective } from './hello.directive';

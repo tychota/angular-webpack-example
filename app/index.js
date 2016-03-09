@@ -1,7 +1,9 @@
+
 import angular from 'angular';
 import { registerDirectives, registerTests } from './utils/register';
 
 import 'bulma/css/bulma.min.css';
+import './index.css';
 
 
 const ngModule = angular.module('vote', []);
