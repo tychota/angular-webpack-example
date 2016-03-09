@@ -1,0 +1,46 @@
+{
+  "name": "vote-prez",
+  "version": "0.0.1",
+  "description": "A test project. With Angular and Webpack.",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tychota/angular-webpack-example.git"
+  },
+  "keywords": [
+    "angular",
+    "webpack",
+    "ionic",
+    "bam",
+    "mobile",
+    "flexbox"
+  ],
+  "author": "Tycho Tatitscheff",
+  "engine": {
+    "node": ">= 5.0.0",
+    "npm": "3"
+  },
+  "licenses": [
+    {
+      "type": "Dual Beerware / Lunchware",
+      "url": "https://github.com/tychota/angular-webpack-example/blob/master/README.md#license"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/tychota/angular-webpack-example/issues"
+  },
+  "homepage": "https://github.com/tychota/angular-webpack-example#readme",
+  "devDependencies": {
+    "eslint": "^2.3.0",
+    "eslint-plugin-angular": "^1.0.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
