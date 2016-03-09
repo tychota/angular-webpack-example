@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const path = require('path');
 const webpackConfig = require('./webpack.config.js');
@@ -6,18 +6,19 @@ const webpackConfig = require('./webpack.config.js');
 const entry = path.resolve(webpackConfig.context, webpackConfig.entry);
 const appDir = path.resolve(entry, '..');
 
-let preprocessors = {};
+const preprocessors = {};
+
 preprocessors[entry] = 'webpack';
 preprocessors[`${appDir}/**/*.test.js`] = 'babel';
 
-module.exports = function(config) {
+module.exports = (config) => {
   config.set({
     basePath: '',
     frameworks: ['mocha', 'chai'],
     files: [entry],
     webpack: webpackConfig,
     exclude: [],
-    preprocessors: preprocessors,
+    preprocessors,
     reporters: ['mocha'],
     port: 9876,
     colors: true,
@@ -27,12 +28,12 @@ module.exports = function(config) {
     singleRun: false,
     concurrency: Infinity,
     plugins: [
-      require('karma-webpack'),
+      'karma-webpack',
       'karma-chrome-launcher',
       'karma-mocha',
       'karma-chai',
       'karma-babel-preprocessor',
       'karma-mocha-reporter'
     ]
-  })
-}
+  });
+};

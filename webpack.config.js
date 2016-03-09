@@ -1,28 +1,29 @@
-"use strict";
+'use strict';
 
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
-  context: __dirname + '/app',
+  context: path.resolve(__dirname, 'app'),
   entry: './index.js',
   output: {
-    path: __dirname + '/app',
+    path: path.resolve(__dirname, 'app'),
     filename: 'bundle.js'
   },
   module: {
-    loaders:  [
+    loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel"
+        loader: 'babel'
       },
       {
         test: /\.html$/,
-        loader: "raw"
+        loader: 'raw'
       },
       {
         test: /\.css$/,
-        loader: "style!css"
+        loader: 'style!css'
       }
     ]
   },
@@ -31,4 +32,4 @@ module.exports = {
       isTest: process.env.NODE_ENV === 'test'
     })
   ]
-}
+};
