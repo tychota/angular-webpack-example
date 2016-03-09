@@ -1,4 +1,5 @@
 import kcdHelloTemplate from './kcd-hello.html';
+import './kcd-hello.css';
 
 class kcdHelloController {
   constructor($interval) {
@@ -15,8 +16,8 @@ class kcdHelloDirective {
     this.restrict = 'E';
     this.scope = {};
     this.template = kcdHelloTemplate;
-    this.controllerAs = 'vm';
     this.controller = kcdHelloController;
+    this.controllerAs = 'vm';
 
     this.$q = $q;
   }
