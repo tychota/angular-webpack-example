@@ -1,5 +1,6 @@
-var angular = require('angular');
+import angular from 'angular';
+import { registerDirectives } from './directives';
 
-var ngModule = angular.module('vote', []);
+const ngModule = angular.module('vote', []);
 
-require('./directives')(ngModule)
+registerDirectives(ngModule);

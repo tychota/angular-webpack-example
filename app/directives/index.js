@@ -1,3 +1,5 @@
-module.exports = function(ngModule) {
-  require('./kcd-hello')(ngModule)
+import { registerKcdHello } from './kcd-hello';
+
+export const registerDirectives = (ngModule) => {
+  registerKcdHello(ngModule);
 }
