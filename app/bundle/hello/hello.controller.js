@@ -1,5 +1,6 @@
 export class HelloController {
-  constructor($interval) {
-    this.greetings = 'Hello Angular';
+  constructor($interval, helloService) {
+    this.name = helloService.getViewerName();
+    this.$interval = $interval;
   }
 }

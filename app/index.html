@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="utf-8"/>
-    <title>Prez Vote</title>
-  </head>
-  <body ng-app="vote">
-    <section class="hero">
-      <div class="hero-content">
-        <div class="container">
-          <h1 class="title">
+
+<head lang="en">
+  <meta charset="utf-8" />
+  <title>Prez Vote</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body ng-app="vote" class="hG">
+  <header class="hero">
+    <div class="hero-content hero-background">
+        <h1 class="title is-2">
             Prez Vote
           </h1>
-          <hello></hello>
-        </div>
+        <hello></hello>
       </div>
-    </section>
-    <script src="bundle.js"> </script>
-  </body>
+    </div>
+  </header>
+  <section>
+    <div class="hG-main columns is-gapless" style="margin-top: 0">
+      <div class="column is-2 side-column-left">
+          <div class="sidebar">
+            <div class="title is-5">
+              Categories
+            </div>
+
+            <ul class="tabs">
+              <li>
+                <a>
+                  <i class="fa fa-image"></i>
+                  Test1
+                </a>
+              </li>
+              <li class="is-active">
+                <a>
+                  <i class="fa fa-music"></i>
+                  Test2
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="fa fa-film"></i>
+                  Test3
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="column side-column-middle">
+
+          <div class="title is-5">
+              Présentation
+            </div>
+
+      </div>
+      <div class="column side-column-right">
+
+          <div class="title is-5">
+              Description
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <script src="bundle.js">
+
+  </script>
+</body>
+
 </html>

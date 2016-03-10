@@ -13,7 +13,6 @@ export class HelloDirective {
     this.template = HelloTemplate;
     this.controllerAs = 'vm';
     this.controller = HelloController;
-    
     this.$q = $q;
   }
 
