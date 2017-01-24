@@ -1,5 +1,7 @@
 # Vote Prez
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tychota/angular-webpack-example.svg)](https://greenkeeper.io/)
+
 ## Project definition
 
 ### Motivations
